@@ -18,18 +18,19 @@ console.log(a === b);
 console.log(a == b);
 console.log((a = b));
 
+//Tim hieu compare
 let ab = 8;
 let ac = "8";
+console.log("Compare ==", ab == ac);
+console.log("Compare ===", ab === ac);
+console.log("Compare !=", ab != ac);
+console.log("Compare !==", ab !== ac);
 
+//tim hieu typeof
 console.log("typeof number ab : ", typeof ab);
 console.log("typeof string ac  : ", typeof ac);
-console.log("pare ==", ab == ac);
-console.log("pare ===", ab === ac);
-console.log("pare !=", ab != ac);
-console.log("pare !==", ab !== ac);
 
-const myArray = [4234, "abc", 123, "asdas", 99];
-
+//Tim hieu instanceof
 function Car(color, year, type) {
   (this.color = color), (this.year = year), (this.type = type);
 }
@@ -38,37 +39,35 @@ const auto = new Car("Black", 2022, "BMW");
 console.log(auto);
 console.log(auto instanceof Car);
 
+//su dung for
+const myArray = [4234, "abc", 123, "asdas", 99];
 for (let i = 0; i < myArray.length; i++) {
   const element = myArray[i];
   console.log(element);
 }
-let m;
-console.log(m);
 
+//su sung while
 let text = "";
 var i = 0;
-
 while (i < 10) {
   console.log((text += "The number is " + i));
   i++;
 }
 
+//Su dung do while
 let text2 = "";
 var i = 0;
-
 do {
   console.log((text2 += "The number is " + i));
   i++;
 } while (i < 10);
 
-let o = 0.00012;
-let p = 0.32333;
-const t = o + p;
-console.log(t);
-
+//So sanh 2 Object
 var user1 = { name: "Tuan", age: 28 };
 var user2 = { name: "Tuan", age: 28 };
-
 console.log(JSON.stringify(user1) === JSON.stringify(user2));
 
-console.log("aaaaa");
+//Tinh tong gia tri trong mang
+const listNumber = [100, 200, 300];
+const total = listNumber.reduce((total, cur) => total + cur);
+console.log(total);
