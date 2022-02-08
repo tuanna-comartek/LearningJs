@@ -31,6 +31,7 @@ console.log("typeof number ab : ", typeof ab);
 console.log("typeof string ac  : ", typeof ac);
 console.log("typeof null  : ", typeof null);
 console.log("typeof undefined  : ", typeof undefined);
+console.log("asasds");
 
 //Tim hieu instanceof
 function Car(color, year, type) {
