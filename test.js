@@ -29,6 +29,8 @@ console.log("Compare !==", ab !== ac);
 //tim hieu typeof
 console.log("typeof number ab : ", typeof ab);
 console.log("typeof string ac  : ", typeof ac);
+console.log("typeof null  : ", typeof null);
+console.log("typeof undefined  : ", typeof undefined);
 
 //Tim hieu instanceof
 function Car(color, year, type) {
@@ -71,3 +73,20 @@ console.log(JSON.stringify(user1) === JSON.stringify(user2));
 const listNumber = [100, 200, 300];
 const total = listNumber.reduce((total, cur) => total + cur);
 console.log(total);
+
+//data Type
+
+let x;
+console.log(x); //Undefined
+
+let x1 = null;
+console.log(x1); //Null
+
+let x2 = 8;
+console.log(x2); // Number
+
+let x3 = "tam";
+console.log(x3); //String
+
+const x4 = {};
+console.log(x4); // Object
